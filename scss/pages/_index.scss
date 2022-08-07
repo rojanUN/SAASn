@@ -222,15 +222,18 @@
         }
     }
     cite{
+        display: block;
         font-size: 19px;
         line-height: 1.57;
         text-transform: capitalize;
+        
+
     }
     q{
         quotes: none;
         display: inline-block;
         vertical-align: top;
-        
+
     }
 
 }
