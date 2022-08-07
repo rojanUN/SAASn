@@ -1,0 +1,238 @@
+#wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.banner-part{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+
+    &:before{
+        content: '';
+        display: block;
+        height: 100vh;
+    }
+
+    &:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #bf3d42;
+    mix-blend-mode: darken;
+    }
+}
+
+.banner-content{
+    position: relative;
+    max-width: 500px;
+    z-index: 9;
+    color: white;
+    text-align: center;
+
+    p{
+        margin: 0 0 25px 0;
+    }
+
+    
+    h1{
+        color: #fff;
+    }
+}
+
+
+
+.about-part{
+    padding: 120px 0;
+
+    p{
+        margin: 0;
+    }
+    .image-wrap{
+    position: relative;
+    padding-top: 61%;
+    border-radius: 25px;
+    overflow: hidden;
+    }
+
+    .btn-wrap{
+        margin-top: 60px;
+    }
+    
+}
+
+.products-part{
+    text-align: center;
+
+    h2{
+        line-height: 1;
+        margin-bottom: 17px;
+    }
+
+    p{
+        margin: 0 0 15px;
+    }
+
+    .four-columns{
+        padding: 40px 0;
+    }
+
+    .style::after{
+        top: -6px;
+    }
+
+    .product-detail{
+        background-color: #121212;
+        border-radius: 23px;
+        color: #fff;
+        font-family:'Poppins', sans-serif;
+
+        h3{
+            margin-bottom: 20px;
+            color: #fff;
+        }
+    }
+    .col{
+        .product-image{
+            height: 400px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            @include flex(wrap,center,center);
+        }
+
+        &:nth-child(2){
+            .product-image{
+                height: 305px;
+            }
+        }
+        &:nth-child(3){
+            .product-image{
+                height: 250px;
+            }
+        }
+        &:nth-child(4){
+            .product-image{
+                height: 182px;
+            }
+        }
+    }
+
+    .product-content{
+        padding: 0 20px 30px;
+        font-size: 14px;
+        line-height: 1.57;
+
+        .product-code{
+            background-color: #000;
+            @include size(62px);
+            // width: 62px;
+            // height: 62px;
+            border-radius: 50%;
+            font-size: 25px;
+            border: 2px solid #b03d42;
+            line-height: 62px;
+            text-align: center;
+            margin: -30px auto 13px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+    
+    
+
+    .button-wrap{
+        padding: 15px 0;
+    }
+
+    // .btn{
+    //     text-transform: capitalize;
+    // }
+
+    // .btn{
+
+    //     &.primary{
+    //         border-color: #b03d42;
+    //     }
+    // }
+    
+}
+.process-part{
+    background-color: $dark-black;
+    text-align: center;
+    color: $white;
+    .container{
+        max-width: 1007px;
+    }
+    h2{
+        color: $white;
+    }
+    // .icon-wrap{
+    //     max-width: 540px;
+    //     margin: 0 auto;
+    // }
+    .icon-wrap{
+        max-width: 540px;
+        margin: 0 auto;
+        border: 1px solid $white;
+        border-radius: 9px;
+        height: 148px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        @include flex(wrap,center,center)
+    }
+    .heading-wrap{
+        padding-top: 110px;
+        margin: 0 auto 85px;  
+     }
+    .process-text{
+        @include v-align(top);
+        font-size: 20px;
+    }
+    .four-columns{
+        margin: 0 -31px 80px;
+        .col{
+            padding: 0 32px;
+        }
+    }
+    .btn{
+        text-transform: capitalize;
+    }
+}
+.feedback-part{
+    .feedback-img{
+        @include size(158px);
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 1px solid $red;
+        overflow:hidden;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: auto;
+            
+        }
+    }
+    cite{
+        font-size: 19px;
+        line-height: 1.57;
+        text-transform: capitalize;
+    }
+    q{
+        quotes: none;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+
+}
+
+
