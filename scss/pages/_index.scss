@@ -208,12 +208,15 @@
     }
 }
 .feedback-part{
+    text-align: center;
+    padding: 100px 0;
     .feedback-img{
         @include size(158px);
         margin: 0 auto;
         border-radius: 50%;
         border: 1px solid $red;
         overflow:hidden;
+    
         img{
             object-fit: cover;
             height: 100%;
