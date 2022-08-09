@@ -2,7 +2,7 @@
 
 jQuery('.feedback-slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     mobileFirst: true,
     slidesToShow: 2,
@@ -39,4 +39,17 @@ jQuery('.feedback-slider').slick({
       // settings: "unslick"
       // instead of a settings object
     ]
+  });
+
+  jQuery('.banner-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    mobileFirst: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    
+    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class="icon-prev"></button>',
+    nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class="icon-next"></button>',
   });
