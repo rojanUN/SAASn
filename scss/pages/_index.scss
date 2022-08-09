@@ -240,5 +240,30 @@
     }
 
 }
+.slick-arrow{
+    font-size: 52px;
+    color: $red;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    transform: translateY(-50%);
+    
+        &.slick-next{
+        right: 0;
+          }
+
+        &.slick-prev{
+        left: 0;
+        }
+    i{
+        @include animate(color,0.35s,linear);
+    }
+    &:hover{
+        i {
+        color:darken($red, 10%);
+        }
+    }
+}
 
 
