@@ -87,6 +87,16 @@
         z-index: 90;
         span{
             background-color: $red;
+            &:first-child{
+                transform: rotate(450deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+                visibility: hidden;
+            }
+            &:last-child{
+                transform: rotate();
+            }
         }
     }
 }
